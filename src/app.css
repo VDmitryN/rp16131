@@ -1,0 +1,38 @@
+.app__sec1 {
+    display: flex;
+    gap: 0px;
+}
+
+.app__sec2 {
+    display: flex;
+    gap: 0px;
+}
+
+.app__square12 {
+	width: 35px;
+	height: 35px;
+	/* background-color: #ee8484; */
+}
+
+.app__title1 {
+	position: relative;
+	left: 385px;
+	font-family: "sans-serif";
+	font-weight: bold;
+}
+
+.app__title2 {
+	position: relative;
+	left: 10px;
+	font-size: 18px;
+	font-family: "sans-serif";
+	font-weight: bold;
+}
+
+.app__title3 {
+	position: relative;
+	left: 10px;
+	font-size: 18px;
+	font-family: "sans-serif";
+	font-weight: bold;
+}

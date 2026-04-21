@@ -1,0 +1,95 @@
+.cell-zn {
+	position: relative;
+	width: 93px;
+	height: 352px;
+	border: 1px solid rgb(0, 0, 0);
+	margin-left: -1px;
+}
+
+.cell-zn__horiz-line0 {
+	width: 100%;
+	height: 1px;
+	background-color: #000000;
+	position: absolute;
+	top: 18px;
+	left: 0;
+}
+
+
+/* _______________________________________ */
+
+.cell-zn__horiz-line1 {
+	width: 100%;
+	height: 8px;
+	background-color: #000000;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+
+.cell-zn__vertical-line11 {
+	width: 2px;
+	height: 60px;
+	background-color: #000000;
+	position: absolute;
+	top: 30px;
+	left: 45px;
+}
+
+.cell-zn__vertical-line2-zn1 {
+	position: absolute;
+	top: 17px;
+	left: -11px;
+	width: 24px;
+	height: 24px;
+	background-color: #ffffff;
+}
+
+.cell-zn__zus-1 {
+	position: absolute;
+	top: 50px;
+	left: -9px;
+	width: 20px;
+	height: 15px;
+	background-color: #ffffff;
+}
+
+
+/* ______________________________________ */
+
+.cell-zn__horiz-line-end {
+	width: 100%;
+	height: 1px;
+	background-color: #000000;
+	position: absolute;
+	top: 302px;
+	left: 0;
+}
+
+.cell-zn__start {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 15px;
+	padding: 1px 0;
+	font-family: "sans-serif";
+	/* font-weight: bold; */
+}
+
+.cell-zn__end {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0px;
+	font-size: 13px;
+	font-family: "sans-serif";
+	/* font-weight: bold; */
+}

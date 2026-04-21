@@ -1,0 +1,106 @@
+.cell-f2 {
+	position: relative;
+	width: 93px;
+	height: 352px;
+	border: 1px solid rgb(0, 0, 0);
+	margin-left: -1px;
+}
+
+.cell-f2__horiz-line0 {
+	width: 100%;
+	height: 1px;
+	background-color: #000000;
+	position: absolute;
+	top: 18px;
+	left: 0;
+}
+
+
+
+/* _______________________________________ */
+
+.cell-f2__horiz-line1 {
+	width: 100%;
+	height: 8px;
+	background-color: #000000;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+
+.cell-f2__horiz-line2 {
+	width: 108%;
+	height: 2px;
+	background-color: #000000;
+	position: absolute;
+	top: 283px;
+	left: 25px;
+}
+
+.cell-f2__vert-line1 {
+	width: 2px;
+	height: 15px;
+	background-color: #000000;
+	position: absolute;
+	top: 0;
+	left: 6px;
+}
+
+.cell-f2__vert-line2 {
+	width: 2px;
+	height: 15px;
+	background-color: #000000;
+	position: absolute;
+	top: 0;
+	left: 19px;
+}
+
+.cell-f2__vert-line3 {
+	width: 2px;
+	height: 15px;
+	background-color: #000000;
+	position: absolute;
+	top: 0;
+	left: 32px;
+}
+
+
+
+/* ______________________________________ */
+
+.cell-f2__horiz-line-end {
+	width: 100%;
+	height: 1px;
+	background-color: #000000;
+	position: absolute;
+	top: 302px;
+	left: 0;
+}
+
+.cell-f2__start {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 15px;
+	padding: 1px 0;
+	font-family: "sans-serif";
+	/* font-weight: bold; */
+}
+
+.cell-f2__end {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0px;
+	font-size: 13px;
+	font-family: "sans-serif";
+	/* font-weight: bold; */
+}
