@@ -6,7 +6,6 @@ import Vv from "../vv/Vv";
 import CellText from "../cellText/CellText";
 import Zus from "../zus/Zus";
 
-// {location, isActive, handleToggle}
 
 const Cell = ({ number, name, inf1="", inf2="", devicesStatus, handleToggleDevice }) => {
   const {r1, r2, zn1, zn2, vv} = devicesStatus;
