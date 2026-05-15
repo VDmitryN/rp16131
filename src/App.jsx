@@ -402,9 +402,9 @@ const App = () => {
         <Cell
           key={9}
           number={9}
-          name={"Ввод-1"}
-          inf1={"ф.16131 - 1,2,3"}
-          inf2={"от Прожектора"}
+          name={"Ввод-1 фид."}
+          inf1={"16131 - 1,2,3"}
+          inf2={"Прожектор"}
           devicesStatus={statusDevicesCells[9]}
           handleToggleDevice={handleToggleDevice}
         ></Cell>
@@ -547,9 +547,9 @@ const App = () => {
         <Cell
           key={14}
           number={14}
-          name={"Ввод-2"}
-          inf1={"ф.16131 - 4,5,6"}
-          inf2={"от Прожектора"}
+          name={"Ввод-2 фид."}
+          inf1={"16131 - 4,5,6"}
+          inf2={"Прожектор"}
           devicesStatus={statusDevicesCells[14]}
           handleToggleDevice={handleToggleDevice}
         ></Cell>
