@@ -11,6 +11,10 @@ import CellF2 from "./components/cellF2/CellF2";
 import CellSmv from "./components/cellSmv/CellSmv";
 import ToggleMove from "./components/toggleMove/ToggleMove";
 import UnitDwo from "./components/unitDwo/UnitDwo";
+import Button from "./components/button/Button";
+import Modal from "react-modal";
+import dataDefaultStateForCells from "./dataDefaultStateForCells.json"
+import dataDefaultStateForCells00 from "./dataDefaultStateForCells00.json"
 
 const config = [
   {
@@ -43,208 +47,204 @@ const config = [
 ];
 
 const App = () => {
-  const [statusDevicesCells, setStatusDevicesCells] = useState({
-    777: {
-      r1: null,
-      r2: null,
-      zn1: null,
-      zn2: false,
-      vv: true,
-      dwo: true,
-    },
-    1: {
-      r1: null,
-      r2: null,
-      zn1: false,
-      zn2: null,
-      vv: null,
-      dwo: null,
-    },
-    2: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    3: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    4: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    5: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    6: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    7: {
-      r1: true,
-      r2: true,
-      zn1: false,
-      zn2: false,
-      vv: true,
-      dwo: null,
-    },
-    8: {
-      r1: true,
-      r2: true,
-      zn1: false,
-      zn2: false,
-      vv: true,
-      dwo: null,
-    },
-    9: {
-      r1: true,
-      r2: true,
-      zn1: false,
-      zn2: false,
-      vv: true,
-      dwo: null,
-    },
-    10: {
-      r1: null,
-      r2: null,
-      zn1: null,
-      zn2: null,
-      vv: null,
-      dwo: null,
-    },
-    11: {
-      r1: true,
-      r2: true,
-      zn1: false,
-      zn2: false,
-      vv: null,
-      dwo: null,
-    },
-    12: {
-      r1: true,
-      r2: null,
-      zn1: false,
-      zn2: null,
-      vv: false,
-      dwo: null,
-    },
-    24: {
-      r1: null,
-      r2: null,
-      zn1: false,
-      zn2: null,
-      vv: null,
-      dwo: null,
-    },
-    23: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    22: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    21: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    20: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    19: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    18: {
-      r1: true,
-      r2: true,
-      zn1: false,
-      zn2: false,
-      vv: true,
-      dwo: null,
-    },
-    17: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    16: {
-      r1: false,
-      r2: false,
-      zn1: false,
-      zn2: false,
-      vv: false,
-      dwo: null,
-    },
-    15: {
-      r1: null,
-      r2: null,
-      zn1: null,
-      zn2: null,
-      vv: null,
-      dwo: null,
-    },
-    14: {
-      r1: true,
-      r2: true,
-      zn1: false,
-      zn2: false,
-      vv: true,
-      dwo: null,
-    },
-    13: {
-      r1: true,
-      r2: null,
-      zn1: false,
-      zn2: null,
-      vv: null,
-      dwo: null,
-    },
-  });
+  // const [statusDevicesCells, setStatusDevicesCells] = useState({
+  //   1: {
+  //     r1: null,
+  //     r2: null,
+  //     zn1: false,
+  //     zn2: null,
+  //     vv: null,
+  //     dwo: null,
+  //   },
+  //   2: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   3: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   4: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   5: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   6: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   7: {
+  //     r1: true,
+  //     r2: true,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: true,
+  //     dwo: null,
+  //   },
+  //   8: {
+  //     r1: true,
+  //     r2: true,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: true,
+  //     dwo: null,
+  //   },
+  //   9: {
+  //     r1: true,
+  //     r2: true,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: true,
+  //     dwo: null,
+  //   },
+  //   10: {
+  //     r1: null,
+  //     r2: null,
+  //     zn1: null,
+  //     zn2: null,
+  //     vv: null,
+  //     dwo: null,
+  //   },
+  //   11: {
+  //     r1: true,
+  //     r2: true,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: null,
+  //     dwo: null,
+  //   },
+  //   12: {
+  //     r1: true,
+  //     r2: null,
+  //     zn1: false,
+  //     zn2: null,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   24: {
+  //     r1: null,
+  //     r2: null,
+  //     zn1: false,
+  //     zn2: null,
+  //     vv: null,
+  //     dwo: null,
+  //   },
+  //   23: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   22: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   21: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   20: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   19: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   18: {
+  //     r1: true,
+  //     r2: true,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: true,
+  //     dwo: null,
+  //   },
+  //   17: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   16: {
+  //     r1: false,
+  //     r2: false,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: false,
+  //     dwo: null,
+  //   },
+  //   15: {
+  //     r1: null,
+  //     r2: null,
+  //     zn1: null,
+  //     zn2: null,
+  //     vv: null,
+  //     dwo: null,
+  //   },
+  //   14: {
+  //     r1: true,
+  //     r2: true,
+  //     zn1: false,
+  //     zn2: false,
+  //     vv: true,
+  //     dwo: null,
+  //   },
+  //   13: {
+  //     r1: true,
+  //     r2: null,
+  //     zn1: false,
+  //     zn2: null,
+  //     vv: null,
+  //     dwo: null,
+  //   },
+  // });
+
+  const [typeSchema, setTypeSchema] = useState("normal"); // normal | off
+  const [statusDevicesCells, setStatusDevicesCells] = useState(() => typeSchema === "normal" ? dataDefaultStateForCells : dataDefaultStateForCells00);
+  const [isOpenModal, setIsOpenModal] = useState(false);
 
   /* 
   
@@ -256,7 +256,7 @@ const App = () => {
 
   const handleToggleDevice = ({ cellNumber, location, status }) => {
     if (statusDevicesCells[cellNumber][location] === null) {
-      return
+      return;
     }
 
     console.log(cellNumber, location, status);
@@ -270,23 +270,60 @@ const App = () => {
     });
   };
 
+  const customStylesForModal = {
+    content: {
+      display: "flex",
+      flexDirection: "column",
+      gap: "10px",
+      width: "400px",
+      height: "150px",
+    },
+  };
+
   return (
     <>
+      <Modal
+        isOpen={isOpenModal}
+        onRequestClose={() => setIsOpenModal(false)}
+        style={customStylesForModal}
+        appElement={document.getElementById("root")}
+      >
+        <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <Button handler={() => setIsOpenModal(false)} use={""}>
+            X
+          </Button>
+        </div>
+        <div>
+          Схема-макет РП-10 кВ для демонстрации и анализа оперативных
+          переключений.
+        </div>
+      </Modal>
+      <div className="app__buttons">
+        <Button handler={() => setIsOpenModal(true)} use={"primary"}>
+          О схеме?
+        </Button>
+        <Button
+          handler={() => {
+            setStatusDevicesCells(dataDefaultStateForCells00);
+            setTypeSchema("off");
+          }}
+          use={typeSchema === "off" ? "success" : "primary"}
+        >
+          Схема РП
+        </Button>
+        <Button
+          handler={() => {
+            setStatusDevicesCells(dataDefaultStateForCells);
+            setTypeSchema("normal");
+          }}
+          use={typeSchema === "normal" ? "success" : "primary"}
+        >
+          "Нормальная схема" РП
+        </Button>
+      </div>
+
       <h1 className="app__title1">РП - 16131 (РУ - 10 кВ)</h1>
-      <UnitDwo
-        key={777}
-        number={777}
-        name={"ВЫКАТНАЯ-1"}
-        inf1={""}
-        inf2={""}
-        devicesStatus={statusDevicesCells[777]}
-        handleToggleDevice={handleToggleDevice}
-      ></UnitDwo>
-      <ToggleMove
-        isActive={true}
-        isMove={true}
-        handleToggleDevice={() => {}}
-      ></ToggleMove>
+
       <div className="app__title2">1 секция</div>
 
       <div className="app__sec1">
@@ -415,7 +452,6 @@ const App = () => {
           inf2={""}
         ></CellTn> */}
       </div>
-      <div className="app__square12"></div>
       <div className="app__title3">2 секция</div>
       <div className="app__sec2">
         <CellZn
