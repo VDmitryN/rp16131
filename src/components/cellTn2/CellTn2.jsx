@@ -5,9 +5,15 @@ import Zus from "../zus/Zus";
 import CellText from "../cellText/CellText";
 import Zn from "../zn/Zn";
 
-const CellTn2 = ({ number, name, inf1="", inf2="", devicesStatus, handleToggleDevice }) => {
-  const {r1, r2, zn1, zn2, vv} = devicesStatus;
-
+const CellTn2 = ({
+  number,
+  name,
+  inf1 = "",
+  inf2 = "",
+  devicesStatus,
+  handleToggleDevice,
+}) => {
+  const { r1, r2, zn1, zn2, vv } = devicesStatus;
 
   return (
     <div className="cell-tn2">
@@ -15,17 +21,28 @@ const CellTn2 = ({ number, name, inf1="", inf2="", devicesStatus, handleToggleDe
         <CellText>{number}</CellText>
       </div>
       <div className="cell-tn2__horiz-line0"></div>
-      <div className="cell-tn2__horiz-line1"></div>
-      
+      <div className="cell-tn2__horiz-line1">
+        <div className="cell-tn2__horiz-line1-square1"></div>
+      </div>
       <div className="cell-tn2__vertical-line1">
         <div className="cell-tn2__vert-line-r-1">
-          <Rr cellNumber={number} location={"r1"} isActive={r1} handleToggle={handleToggleDevice}></Rr>
+          <Rr
+            cellNumber={number}
+            location={"r1"}
+            isActive={r1}
+            handleToggle={handleToggleDevice}
+          ></Rr>
         </div>
         <div className="cell-tn2__vertical-line-zn-1">
           <div className="cell-tn2__horizontal-line-zn1"></div>
           <div className="cell-tn2__vertical-line-zn1">
             <div className="cell-tn2__vertical-line-zn-square">
-              <Zn cellNumber={number} location={"zn1"} isActive={zn1} handleToggle={handleToggleDevice}></Zn>
+              <Zn
+                cellNumber={number}
+                location={"zn1"}
+                isActive={zn1}
+                handleToggle={handleToggleDevice}
+              ></Zn>
             </div>
             <div className="cell-tn2__zus">
               <Zus></Zus>

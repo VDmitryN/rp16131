@@ -1,7 +1,7 @@
 .cell-tn {
 	position: relative;
-	width: 93px;
-	height: 352px;
+	width: 105px;
+	height: 353px;
 	border: 1px solid rgb(0, 0, 0);
 	margin-left: -1px;
 }
@@ -54,6 +54,18 @@
 	top: 30px;
 	left: 20px;
 }
+
+.cell-tn__vertical-line2-square1 {
+	position: absolute;
+	z-index: -1;
+	top: 248px;
+	right: 2px;
+	width: 30px;
+	height: 10px;
+	background-color: #ffffff;
+}
+
+
 
 .cell-tn__vertical-line-r-2 {
 	position: absolute;

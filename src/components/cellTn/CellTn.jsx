@@ -31,6 +31,7 @@ const CellTn = ({ number, name, inf1="", inf2="", devicesStatus, handleToggleDev
             </div>
           </div>
         </div>
+        <div className="cell-tn__vertical-line2-square1"></div>
       </div>
       <div className="cell-tn__vertical-line1">
         <div className="cell-tn__vert-line-r-1">

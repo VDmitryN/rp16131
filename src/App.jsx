@@ -1,16 +1,12 @@
 import { useState } from "react";
 import Cell from "./components/cell/Cell";
 import "./app.css";
-import CellList from "./components/cellList/CellList";
-import CellList2 from "./components/cellList2/CellList2";
 import CellTn from "./components/cellTn/CellTn";
 import CellZn from "./components/cellZn/CellZn";
 import CellF from "./components/cellF/CellF";
 import CellTn2 from "./components/cellTn2/CellTn2";
 import CellF2 from "./components/cellF2/CellF2";
 import CellSmv from "./components/cellSmv/CellSmv";
-import ToggleMove from "./components/toggleMove/ToggleMove";
-import UnitDwo from "./components/unitDwo/UnitDwo";
 import Button from "./components/button/Button";
 import Modal from "react-modal";
 import dataDefaultStateForCells from "./dataDefaultStateForCells.json"

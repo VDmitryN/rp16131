@@ -1,7 +1,7 @@
 .cell-smv {
 	position: relative;
-	width: 103px;
-	height: 352px;
+	width: 113px;
+	height: 353px;
 	border: 1px solid rgb(0, 0, 0);
 	margin-left: -1px;
 }
@@ -38,7 +38,6 @@
 	background-color: #000000;
 	position: absolute;
 	top: 30px;
-	
 	right: 0;
 }
 
@@ -47,8 +46,8 @@
 	height: 255px;
 	background-color: #000000;
 	position: absolute;
-	top: 30px;
-	left: 30px;
+	
+	left: 10%;
 }
 
 .cell-smv__vert-line-r-1 {
@@ -115,19 +114,21 @@
 }
 
 .cell-smv__horizontal-line3 {
-	width: 104px;
+	width: 116px;
 	height: 2px;
-	top: 255px;
+	top: 253px;
 	background-color: #000000;
 	position: absolute;
-	right: 0;
+	z-index: -2;
+	right: 0px;
 }
 
 .cell-smv__vertical-line3 {
 	width: 8px;
-	height: 415px;
+	height: 422px;
 	background-color: #000000;
 	position: absolute;
+	z-index: -2;
 	top: 0px;
 	right: 4px;
 }

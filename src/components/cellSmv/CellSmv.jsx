@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "./cellSmv.css";
 import Rr from "../rr/Rr";
 import Zn from "../zn/Zn";
@@ -8,8 +8,15 @@ import Zus from "../zus/Zus";
 
 // {location, isActive, handleToggle}
 
-const CellSmv = ({ number, name, inf1="", inf2="", devicesStatus, handleToggleDevice }) => {
-  const {r1, r2, zn1, zn2, vv} = devicesStatus;
+const CellSmv = ({
+  number,
+  name,
+  inf1 = "",
+  inf2 = "",
+  devicesStatus,
+  handleToggleDevice,
+}) => {
+  const { r1, r2, zn1, zn2, vv } = devicesStatus;
 
   return (
     <div className="cell-smv">
@@ -18,28 +25,45 @@ const CellSmv = ({ number, name, inf1="", inf2="", devicesStatus, handleToggleDe
       </div>
       <div className="cell-smv__horiz-line0"></div>
       <div className="cell-smv__horiz-line1">
-        <div className="cell-smv__vertical-line3"></div>
-      </div>
-      <div className="cell-smv__vertical-line1">
-        <div className="cell-smv__vert-line-r-1">
-          <Rr cellNumber={number} location={"r1"} isActive={r1} handleToggle={handleToggleDevice}></Rr>
-        </div>
-        <div className="cell-smv__vertical-line-zn-1">
-          <div className="cell-smv__horizontal-line-zn"></div>
-          <div className="cell-smv__vertical-line2">
-            <div className="cell-smv__vertical-line2-zn1">
-              <Zn cellNumber={number} location={"zn1"} isActive={zn1} handleToggle={handleToggleDevice}></Zn>
-            </div>
-            <div className="cell-smv__zus">
-              <Zus></Zus>
+        <div className="cell-smv__vertical-line1">
+          <div className="cell-smv__vert-line-r-1">
+            <Rr
+              cellNumber={number}
+              location={"r1"}
+              isActive={r1}
+              handleToggle={handleToggleDevice}
+            ></Rr>
+          </div>
+          <div className="cell-smv__vertical-line-zn-1">
+            <div className="cell-smv__horizontal-line-zn"></div>
+            <div className="cell-smv__vertical-line2">
+              <div className="cell-smv__vertical-line2-zn1">
+                <Zn
+                  cellNumber={number}
+                  location={"zn1"}
+                  isActive={zn1}
+                  handleToggle={handleToggleDevice}
+                ></Zn>
+              </div>
+              <div className="cell-smv__zus">
+                <Zus></Zus>
+              </div>
             </div>
           </div>
+          <div className="cell__vertical-line-vv">
+            <Vv
+              cellNumber={number}
+              location={"vv"}
+              isActive={vv}
+              handleToggle={handleToggleDevice}
+            ></Vv>
+          </div>
+          <div className="cell-smv__horizontal-line3"></div>
         </div>
-        <div className="cell__vertical-line-vv">
-          <Vv cellNumber={number} location={"vv"} isActive={vv} handleToggle={handleToggleDevice}></Vv>
-        </div>
-        <div className="cell-smv__horizontal-line3"></div>
+        
+        <div className="cell-smv__vertical-line3"></div>
       </div>
+
       <div className="cell__horiz-line-end"></div>
       <div className="cell__end">
         <CellText>{name}</CellText>

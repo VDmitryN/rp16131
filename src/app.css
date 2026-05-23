@@ -24,7 +24,7 @@
 
 .app__title2 {
 	/* position: relative; */
-	left: 10px;
+	padding-left: 10px;
 	font-size: 18px;
 	font-family: "sans-serif";
 	font-weight: bold;
@@ -32,7 +32,7 @@
 
 .app__title3 {
 	/* position: relative; */
-	left: 10px;
+	padding-left: 10px;
 	font-size: 18px;
 	font-family: "sans-serif";
 	font-weight: bold;

@@ -1,7 +1,7 @@
 .cell-f {
 	position: relative;
-	width: 93px;
-	height: 352px;
+	width: 97px;
+	height: 353px;
 	border: 1px solid rgb(0, 0, 0);
 	margin-left: -1px;
 }
@@ -29,12 +29,12 @@
 }
 
 .cell-f__horiz-line2 {
-	width: 139%;
+	width: 135%;
 	height: 2px;
 	background-color: #000000;
 	position: absolute;
 	top: 283px;
-	left: -60px;
+	left: -70%;
 }
 
 .cell-f__vert-line1 {
@@ -43,7 +43,7 @@
 	background-color: #000000;
 	position: absolute;
 	top: 0;
-	left: 92px;
+	right: 5%;
 }
 
 .cell-f__vert-line2 {
@@ -52,7 +52,7 @@
 	background-color: #000000;
 	position: absolute;
 	top: 0;
-	left: 105px;
+	right: 17%;
 }
 
 .cell-f__vert-line3 {
@@ -61,7 +61,7 @@
 	background-color: #000000;
 	position: absolute;
 	top: 0;
-	left: 118px;
+	right: 29%;
 }
 
 

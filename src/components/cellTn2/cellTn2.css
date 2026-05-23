@@ -1,7 +1,7 @@
 .cell-tn2 {
 	position: relative;
-	width: 103px;
-	height: 352px;
+	width: 113px;
+	height: 353px;
 	border: 1px solid rgb(0, 0, 0);
 	margin-left: -1px;
 }
@@ -27,6 +27,18 @@
 	top: 30px;
 	left: 0;
 }
+
+.cell-tn2__horiz-line1-square1 {
+	position: absolute;
+	z-index: -1;
+	top: 8px;
+	right: -10px;
+	width: 45px;
+	height: 20px;
+	background-color: #ffffff;
+}
+
+
 
 .cell-tn2__vertical-line1 {
 	width: 2px;

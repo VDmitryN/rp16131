@@ -1,7 +1,7 @@
 .cell-f2 {
 	position: relative;
-	width: 93px;
-	height: 352px;
+	width: 97px;
+	height: 353px;
 	border: 1px solid rgb(0, 0, 0);
 	margin-left: -1px;
 }
@@ -29,7 +29,7 @@
 }
 
 .cell-f2__horiz-line2 {
-	width: 108%;
+	width: 104.5%;
 	height: 2px;
 	background-color: #000000;
 	position: absolute;
@@ -43,7 +43,7 @@
 	background-color: #000000;
 	position: absolute;
 	top: 0;
-	left: 6px;
+	left: 8%;
 }
 
 .cell-f2__vert-line2 {
@@ -52,7 +52,7 @@
 	background-color: #000000;
 	position: absolute;
 	top: 0;
-	left: 19px;
+	left: 22%;
 }
 
 .cell-f2__vert-line3 {
@@ -61,7 +61,7 @@
 	background-color: #000000;
 	position: absolute;
 	top: 0;
-	left: 32px;
+	left: 36%;
 }
 
 

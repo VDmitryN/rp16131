@@ -1,7 +1,7 @@
 .cell-zn {
 	position: relative;
-	width: 93px;
-	height: 352px;
+	width: 97px;
+	height: 353px;
 	border: 1px solid rgb(0, 0, 0);
 	margin-left: -1px;
 }
@@ -33,7 +33,7 @@
 	background-color: #000000;
 	position: absolute;
 	top: 30px;
-	left: 45px;
+	left: 50%;
 }
 
 .cell-zn__vertical-line2-zn1 {
